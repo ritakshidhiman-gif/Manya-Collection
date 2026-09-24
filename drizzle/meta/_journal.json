@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1787822578093,
+      "tag": "0000_natural_tana_nile",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1788077693266,
+      "tag": "0001_clumsy_klaw",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1788277292289,
+      "tag": "0002_broken_shaman",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1788278967479,
+      "tag": "0003_chubby_ma_gnuci",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1788279206081,
+      "tag": "0004_strange_puma",
+      "breakpoints": true
+    }
+  ]
+}

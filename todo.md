@@ -1,0 +1,85 @@
+# Manya Collection Upgrade
+
+- [x] Inspect the uploaded banner, reference filter layout, and uploaded video for usable visual direction.
+- [x] Copy and prepare the uploaded hero asset for web use without altering the original upload.
+- [x] Rebrand the storefront from Atelier to Manya Collection with a traditional fashion-retail presentation.
+- [x] Add catalog categories, sort controls, and filters for price, color, size, and collection.
+- [x] Add a product data model and an extensible management route for adding new suit/design entries.
+- [x] Add clear developer instructions for extending the product catalog and adding image URLs.
+- [x] Verify desktop and mobile layouts, filter interactions, add-to-bag behavior, and the management workflow.
+- [x] Save a new checkpoint and deliver the updated project.
+- [x] Inspect the target around Home.tsx line 156 and confirm what should move left.
+- [x] Apply the left-side adjustment manually if the visual editor did not change the code.
+- [x] Recheck desktop/mobile previews and save the new checkpoint.
+- [x] Read the full-stack project guidance and apply the database upgrade scaffold.
+- [x] Define the persistent product catalog schema and seed only the existing catalog entries.
+- [x] Connect storefront reads and Catalog Studio create/delete actions to the database API.
+- [x] Verify persistence across reloads and save a new database-backed checkpoint.
+- [x] Add customer sign-in and signed-in account state to the storefront.
+- [x] Restrict the add-suit entry point and catalog mutations to authenticated admins.
+- [x] Add a visible admin-only add-suit icon/control with a clear route back to Catalog Studio.
+- [ ] Replace the hero and catalog images when the user provides the new image assets.
+- [x] Verify customer/admin visibility, login behavior, responsive layout, and save a new checkpoint.
+- [x] Replace the signed-in Account button action with a truthful account-state interaction and keep sign-out explicit.
+- [x] Verify authenticated customer/admin UI visibility in the browser before the interim checkpoint.
+- [x] Inspect why the preview currently appears signed in as the owner profile.
+- [x] Ensure customer sign-in starts an individual OAuth session and does not reuse owner identity.
+- [x] Preserve owner/admin role assignment separately from customer login state.
+- [x] Verify the focused login fix and save a new checkpoint.
+- [x] Inspect the current hosted OAuth behavior and document why the browser shows the existing Ritakshi session.
+- [x] Decide whether customers authenticate by email OTP, phone OTP, or both: email OTP only for now.
+- [x] Configure real email OTP delivery through Resend and required secrets; skip phone OTP and Twilio Verify for now.
+- [x] Implement a Manya email-login dialog, OTP verification, and per-customer session creation.
+- [x] Verify customers cannot see admin controls and save a new authentication checkpoint.
+- [x] Fix the over-escaped six-digit OTP validator reported by the customer.
+- [x] Re-run OTP/session regression checks and verify the corrected code path.
+- [x] Save a new checkpoint for the authentication fix.
+- [x] Verify the corrected email OTP flow end to end with a real customer code and post-login session state.
+- [x] Keep Catalog Studio explicitly on its separate admin authentication path with truthful copy.
+- [x] Save the authentication checkpoint only after successful customer OTP verification.
+- [x] Verify a signed-in customer does not see Add suit or Catalog Studio after email OTP login.
+- [x] Verify an admin account still sees Add suit and can reach Catalog Studio.
+- [x] Make Catalog Studio’s separate admin authentication path and copy explicit.
+- [x] Save the final authentication checkpoint after both role checks are complete.
+- [x] Make the current owner email configurable as ritakshidhiman@gmail.com for admin access.
+- [x] Ensure only the authorized owner/admin email sees Add suit and Catalog Studio controls.
+- [x] Add coverage for customer-versus-owner authorization and publish the access-control update.
+- [x] Add a real commerce checkout backend for Manya Collection using custom database orders and Razorpay.
+- [x] Map the persistent Manya catalog and cart items to custom server-priced checkout products.
+- [x] Replace the bag’s placeholder checkout action with a real Razorpay checkout handoff.
+- [x] Verify checkout handoff and publish the commerce update.
+- [x] Register the injected commerce router and expose Shopify runtime configuration for compatibility; custom checkout remains authoritative.
+- [x] Seed only the minimal checkout demo catalog until the client’s live products are supplied; no Shopify catalog seed was needed for the custom path.
+- [x] Verify the custom order/payment path; Shopify product checkout remains intentionally unused.
+- [x] Confirm whether checkout should use Shopify payments or an India-focused gateway with UPI and net banking support.
+- [x] Configure the selected payment gateway credentials in test mode.
+- [ ] Add Google Pay, PhonePe, BHIM/UPI, net banking, cards, and other gateway-supported methods to checkout.
+- [ ] Verify the checkout handoff and payment-method presentation before publishing.
+- [x] Stop using Shopify for customer checkout and keep the custom path authoritative.
+- [x] Add persistent orders, order items, and payment records to the database.
+- [x] Create Razorpay orders server-side and verify signatures securely.
+- [x] Connect the existing Manya bag to a customer details and Razorpay checkout flow.
+- [x] Verify test-mode checkout and publish the custom checkout update.
+- [ ] Perform an end-to-end Razorpay test-mode checkout from the Manya bag, including successful payment callback verification and database status updates.
+- [ ] Capture and verify the checkout details modal, Razorpay handoff, and post-payment success/failure states in the browser.
+- [ ] Save and publish a new checkpoint after the custom checkout flow is fully verified.
+- [ ] Confirm Razorpay’s current UPI checkout configuration and account capability.
+- [x] Explicitly request a UPI payment section in the Razorpay checkout configuration.
+- [ ] Recheck the payment-method screen and save a focused UPI checkpoint.
+- [ ] Verify Razorpay account-side capability for Google Pay, PhonePe, and BHIM before claiming app-specific availability.
+- [x] Make product cards open a dedicated suit detail experience instead of only adding to bag.
+- [x] Add size selection, delivery estimate, product description, and related-design recommendations.
+- [x] Add an honest reviews section with an empty state until real customer reviews exist.
+- [x] Expand persistent order status to pending payment, processing, completed, failed, and cancelled.
+- [x] Update payment verification and admin order controls to reflect lifecycle status.
+- [x] Verify detail interactions and order-state behavior, then publish the update.
+- [x] Add client-side minimum lengths for address, city, and state fields.
+- [x] Convert checkout validation responses into concise human-readable messages.
+- [x] Re-run checkout regression checks after the validation UX fix.
+- [x] Fix owner-only Add suit visibility beside the account control for ritakshidhiman@gmail.com, including the mobile header layout.
+- [x] Add and verify owner/admin-only deletion for unavailable suits in Catalog Studio.
+- [x] Add an owner/admin-only camera or gallery photo upload beside the Catalog Studio image URL field.
+- [x] Store uploaded catalog photos in persistent hosted storage and populate the image URL automatically.
+- [x] Update the storefront address to Mandir Gate No. 3, Near Om Hotel, Kohala, Jawalamukhi, Himachal Pradesh 176031.
+- [x] Replace the unresolved hero image with a girl wearing a traditional Indian cotton suit and verify the visual editor intent.
+- [x] Replace the four category images with cotton, festive, designer, and warm winter Indian suit visuals and verify the category grid.
